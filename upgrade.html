@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Upgrade Plans</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      background-color: #f9f9fb;
+      color: #222;
+      margin: 0;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 40px;
+    }
+
+    .plans {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      flex-wrap: wrap;
+    }
+
+    .plan {
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+      width: 300px;
+      padding: 30px 25px;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+
+    .plan:hover {
+      transform: translateY(-4px);
+    }
+
+    .price {
+      font-size: 2rem;
+      margin: 15px 0;
+      font-weight: bold;
+    }
+
+    .price small {
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    .plan h3 {
+      margin-top: 0;
+      font-size: 1.3rem;
+    }
+
+    .features {
+      text-align: left;
+      margin-top: 20px;
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+
+    button {
+      background-color: #7054ff;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1rem;
+      margin-top: 20px;
+      transition: background-color 0.2s ease;
+    }
+
+    button:hover {
+      background-color: #5c3edb;
+    }
+
+    .current {
+      background-color: #e7e7e7;
+      color: #444;
+      cursor: default;
+    }
+
+    @media (max-width: 700px) {
+      .plans {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Upgrade Plans</h1>
+  <div class="plans">
+    <div class="plan">
+      <h3>Free</h3>
+      <div class="price">R0 <small>/month</small></div>
+      <p>Intelligence for everyday tasks</p>
+      <button class="current">Your current plan</button>
+      <div class="features">
+        <p>⭐ Free job applications</p>
+        <p>🔍Filterd job search</p>
+        
+     
+      </div>
+    </div>
+
+    <div class="plan" style="background-color: #f4f1ff;">
+      <h3>Go</h3>
+      <div class="price">R99.05 <small>/month (incl. VAT)</small></div>
+      <p>More access to premium features</p>
+      <button onclick="window.location.href='subscribe-success.html'">Subscribe Now</button>
+      <div class="features">
+        <p>⭐Access exclusive interview tips AI powered </p>
+        <p>💬 Get tailored job applications</p>
+        <p>🖼️ Remove all ads</p>
+        <p>🧠 Improve your skills with partner</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
